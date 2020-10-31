@@ -8,6 +8,8 @@
     <Authors>DBHow</Authors>
     <Description>This package stores data protection keys in PostgreSQL database.</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/DBHow/DBGang.AspNetCore.DataProtection.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
   <ItemGroup>
