@@ -16,6 +16,7 @@ namespace DBGang.AspNetCore.DataProtection.PostgreSQL
             using var adapter = new NpgsqlDataAdapter(comm);
 
             conn.Open();
+            comm.Prepare();
             adapter.Fill(table);
             conn.Close();
 
@@ -44,6 +45,7 @@ namespace DBGang.AspNetCore.DataProtection.PostgreSQL
             comm.Parameters.Add("value", NpgsqlTypes.NpgsqlDbType.Text).Value = key.Value;
 
             conn.Open();
+            comm.Prepare();
             comm.ExecuteNonQuery();
             conn.Close();
         }
