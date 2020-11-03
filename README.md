@@ -1,7 +1,7 @@
 # DBGang.AspNetCore.DataProtection
 Implements custom key storage providers
 
-To use the package, you need:
+This package stores data protection keys in PostgreSQL database using ADO.NET. To use the package, you need:
 
 1. Create table in your PostgreSQL database: simply run the script in postgresql_table.sql file.
 2. Create a database user and grant it SELECT,INSERT permissions to the newly created table.
